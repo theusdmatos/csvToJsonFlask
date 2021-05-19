@@ -1,0 +1,45 @@
+<!-- ESSA PÁGINA É APENAS PARA TESTE -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSV TO JSON</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="columns">
+    <img class="pred_img" src="{{ url_for('send_file', filename=csv_file_name)}}" />
+    <br>
+    <br>
+    <br>
+    <div class="column" style="font-size:2rem">
+      <h2 id="pred" style="color:black">
+        JSON GERADO: <br>
+        <span style="font-weight: bold; color:red;">{{ path }}</span>
+      </h2>
+      <!-- 
+     <h2 style="font-size: 2rem"> ACURACIA: <span style="font-weight: bold; color:whitesmoke;">{{prob}}%</span>
+      </h2>
+   -->
+      <br>
+      <a href="/" class="button is-black is-outlined" style="font-size:1.5rem">VOLTAR</a>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container"></div>
+  </section>
+
+  <script src="/static/script.js"></script>
+
+</body>
+
+</html>

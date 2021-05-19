@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSV TO JSON</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container has-text-centered bg-text" style="width: 100%">
+      <div>
+        <i class="arrow_down"></i>
+        <form action="/converter" method="post" enctype="multipart/form-data"
+          style="margin-top: 30px; width: 80%; text-align: center; margin: auto;">
+          <div class="file has-name is-centered">
+            <label class="file-label">
+              <input class="file-input" type="file" id="csv" name="csv">
+              <span class="file-cta">
+                <span class="file-label"> CSV </span>
+              </span>
+            </label>
+          </div>
+          <br>
+          <input type="submit" class="button is-black" name="csv" id="classify_button">
+        </form>
+      </div>
+    </div>
+    </div>
+    <div>
+
+  </section>
+  <script src="/static/script.js"></script>
+</body>
+
+</html>
