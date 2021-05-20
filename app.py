@@ -10,10 +10,7 @@ UPLOAD_FOLDER = "uploads"
 STATIC_FOLDER = "static"
 
 # Passando o arquivo CSV
-
-
 def csvTojson(csvFilePath):
-
     # Recebendo o CSV e abrindo ele
     data = {}
     with open(csvFilePath, encoding='utf-8') as csvf:
@@ -22,7 +19,6 @@ def csvTojson(csvFilePath):
             # Passando a chave
             key = rows['TIME']
             data[key] = rows
-	
 
     dictionary = data
     print(dictionary)
@@ -39,7 +35,6 @@ def csvTojson(csvFilePath):
 # em cima de outra, então aqui estou aplicando a função .route() em cima
 # da função home(), esse metodo route() define uma rota para a minha pagina "/"
 # Home page
-
 
 @app.route("/")
 # Por padrão, o Flask irá procurar o arquivo index.html no diretório templates do projeto.
